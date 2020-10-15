@@ -52,9 +52,9 @@ function build_image() {
     tags="adoptopenjdk-${test}-test:${version}-${package}-${os}-${vm}-${build}"
 
 	echo "#####################################################"
-	echo "INFO: docker build --no-cache -t ${tags} -f ${file} $(realpath $(dirname "$0"))/"
+	echo "INFO: docker build --network host --no-cache -t ${tags} -f ${file} $(realpath $(dirname "$0"))/"
 	echo "#####################################################"
-	docker build --no-cache -t ${tags} -f ${file} $(realpath $(dirname "$0"))/
+	docker build --network host --no-cache -t ${tags} -f ${file} $(realpath $(dirname "$0"))/
 	if [ $? != 0 ]; then
 		echo "ERROR: Docker build of image: ${tags} from ${file} failed."
 		exit 1
