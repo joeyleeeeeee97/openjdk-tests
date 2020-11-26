@@ -1,4 +1,6 @@
 #!groovy
+def maxChildJobNum = 22
+
 def getBuildList() {
 	// This map is created in case of BUILD_LIST is not provided. Once we match all sub-folders with top-level test targets, this map can be simplified.
 	def TESTPROJECTS = [system:'system', perf:'perf', jck:'jck', external:'external', functional: 'functional', openjdk:'openjdk', jdk:'openjdk', runtest:'', sanity:'', extended:'']
@@ -199,8 +201,8 @@ def setupParallelEnv() {
 				}
 				
 				childJobNum = testSubDirs.size()
-				if ( childJobNum > 20) {
-					assert false : "Build failed becuase childJobNum: ${childJobNum} > 20."
+				if ( childJobNum > maxChildJobNum) {
+					assert false : "Build failed becuase childJobNum: ${childJobNum} > ${maxChildJobNum}."
 				}
 			}
 			UPSTREAM_TEST_JOB_NAME = JOB_NAME
