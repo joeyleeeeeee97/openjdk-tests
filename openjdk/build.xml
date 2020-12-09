@@ -145,6 +145,14 @@
 						</exec>
 					</then>
 				</if>
+				<if>
+					<contains string="${env.JDK_REPO}" substring="jdk8u"/>
+					<then>
+						<exec executable="bash" failonerror="true" dir="openjdk-jdk">
+							<arg line="get_source_ajdk.sh --site gitlab" />
+						</exec>
+					</then>
+				</if>
 			</then>
 			<else>
 				<if>
