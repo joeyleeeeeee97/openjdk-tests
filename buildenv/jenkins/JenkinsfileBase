@@ -866,8 +866,7 @@ def getGitRepoBranch(ownerBranch, defaultOwnerBranch, repo) {
 		}
 	}
 
-	String owner = actualRepoBranch[0].trim()
-	String repoURL = "https://github.com/${owner}/${repo}.git"
+	String repoURL = "https://gitee.com/joeylee97/TKG.git"
 	if (env.SPEC.startsWith('zos')) {
 		repoURL = repoURL.replace("https://github.com/","git@github.com:")
 	}
