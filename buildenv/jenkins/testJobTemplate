@@ -108,9 +108,9 @@ println "GROUPS: ${GROUPS}"
 println "ARCH_OS_LIST: ${ARCH_OS_LIST}"
 
 ARCH_OS_LIST.each { ARCH_OS ->
- 	def ADOPTOPENJDK_REPO = "https://github.com/AdoptOpenJDK/openjdk-tests.git"
-	def OPENJ9_REPO = "https://github.com/eclipse/openj9.git"
-	def ADOPTOPENJDK_BRANCH = "master"
+ 	def ADOPTOPENJDK_REPO = "https://gitee.com/joeylee97/openjdk-tests.git"
+	def OPENJ9_REPO = "https://gitee.com/joeylee97/openj9.git"
+	def ADOPTOPENJDK_BRANCH = "ajdk"
 
 	JDK_VERSIONS.each { JDK_VERSION ->
 		LEVELS.each { LEVEL ->
