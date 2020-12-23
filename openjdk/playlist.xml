@@ -1320,7 +1320,7 @@
 			-jdk:$(Q)$(TEST_JDK_HOME)$(Q) \
 			-exclude:$(Q)$(JTREG_JDK_TEST_DIR)$(D)ProblemList.txt$(Q) \
 			-exclude:$(Q)$(TEST_RESROOT)$(D)$(PROBLEM_LIST_FILE)$(Q) \
-			$(Q)$(JTREG_JDK_TEST_DIR)/multi-tenant(Q); \
+			$(Q)$(JTREG_JDK_TEST_DIR)/multi-tenant$(Q); \
 			$(TEST_STATUS)</command>
 		<subsets>
 			<subset>8</subset>
