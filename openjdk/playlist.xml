@@ -1287,7 +1287,7 @@
 		</groups>
 	</test>
 	<test>
-		<testCaseName>dragonwell8_jwarmup_hotspot</testCaseName>
+		<testCaseName>dragonwell8_t3</testCaseName>
 		<command>$(JAVA_COMMAND) -Xmx512m -jar $(Q)$(TEST_RESROOT)$(D)jtreg$(D)lib$(D)jtreg.jar$(Q) \
 			$(JTREG_BASIC_OPTIONS) -vmoptions:$(Q)-Xmx512m $(JVM_OPTIONS)$(Q) \
 			-w $(Q)$(REPORTDIR)$(D)work$(Q) \
@@ -1295,7 +1295,7 @@
 			-jdk:$(Q)$(TEST_JDK_HOME)$(Q) \
 			-exclude:$(Q)$(JTREG_JDK_TEST_DIR)$(D)ProblemList.txt$(Q) \
 			-exclude:$(Q)$(TEST_RESROOT)$(D)$(PROBLEM_LIST_FILE)$(Q) \
-			$(Q)$(JTREG_HOTSPOT_TEST_DIR)/runtime/containers/docker/(Q); \
+			$(Q)$(JTREG_HOTSPOT_TEST_DIR)/runtime/containers/docker(Q); \
 			$(TEST_STATUS)</command>
 		<subsets>
 			<subset>8</subset>
@@ -1308,7 +1308,7 @@
 		</groups>
 	</test>
 	<test>
-		<testCaseName>dragonwell8_jwarmup_hotspot</testCaseName>
+		<testCaseName>dragonwell8_t2</testCaseName>
 		<command>$(JAVA_COMMAND) -Xmx512m -jar $(Q)$(TEST_RESROOT)$(D)jtreg$(D)lib$(D)jtreg.jar$(Q) \
 			$(JTREG_BASIC_OPTIONS) -vmoptions:$(Q)-Xmx512m $(JVM_OPTIONS)$(Q) \
 			-w $(Q)$(REPORTDIR)$(D)work$(Q) \
@@ -1329,7 +1329,7 @@
 		</groups>
 	</test>
 	<test>
-		<testCaseName>dragonwell8_jwarmup_hotspot</testCaseName>
+		<testCaseName>dragonwell8_t1</testCaseName>
 		<command>$(JAVA_COMMAND) -Xmx512m -jar $(Q)$(TEST_RESROOT)$(D)jtreg$(D)lib$(D)jtreg.jar$(Q) \
 			$(JTREG_BASIC_OPTIONS) -vmoptions:$(Q)-Xmx512m $(JVM_OPTIONS)$(Q) \
 			-w $(Q)$(REPORTDIR)$(D)work$(Q) \
