@@ -1295,7 +1295,7 @@
 			-jdk:$(Q)$(TEST_JDK_HOME)$(Q) \
 			-exclude:$(Q)$(JTREG_JDK_TEST_DIR)$(D)ProblemList.txt$(Q) \
 			-exclude:$(Q)$(TEST_RESROOT)$(D)$(PROBLEM_LIST_FILE)$(Q) \
-			$(Q)$(JTREG_HOTSPOT_TEST_DIR)/runtime/containers/docker(Q); \
+			$(Q)$(JTREG_HOTSPOT_TEST_DIR)/runtime/containers/docker$(Q); \
 			$(TEST_STATUS)</command>
 		<subsets>
 			<subset>8</subset>
@@ -1316,7 +1316,7 @@
 			-jdk:$(Q)$(TEST_JDK_HOME)$(Q) \
 			-exclude:$(Q)$(JTREG_JDK_TEST_DIR)$(D)ProblemList.txt$(Q) \
 			-exclude:$(Q)$(TEST_RESROOT)$(D)$(PROBLEM_LIST_FILE)$(Q) \
-			$(Q)$(JTREG_JDK_TEST_DIR)/com/sun/jndi/ldap/LdapDnsProviderTest.java(Q); \
+			$(Q)$(JTREG_JDK_TEST_DIR)/com/sun/jndi/ldap/LdapDnsProviderTest.java$(Q); \
 			$(TEST_STATUS)</command>
 		<subsets>
 			<subset>8</subset>
@@ -1337,7 +1337,7 @@
 			-jdk:$(Q)$(TEST_JDK_HOME)$(Q) \
 			-exclude:$(Q)$(JTREG_JDK_TEST_DIR)$(D)ProblemList.txt$(Q) \
 			-exclude:$(Q)$(TEST_RESROOT)$(D)$(PROBLEM_LIST_FILE)$(Q) \
-			$(Q)$(JTREG_JDK_TEST_DIR)/com/sun/jndi/ldap/LdapDnsProviderTest.java(Q); \
+			$(Q)$(JTREG_JDK_TEST_DIR)/com/sun/jndi/ldap/LdapDnsProviderTest.java$(Q); \
 			$(TEST_STATUS)</command>
 		<subsets>
 			<subset>8</subset>
