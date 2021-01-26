@@ -1374,4 +1374,95 @@
 		</groups>
 		<platformRequirements>spec.linux_x86-64</platformRequirements>
 	</test>
+	<test>
+		<testCaseName>ajdk1compiler_hotspot</testCaseName>
+		<command>$(JAVA_COMMAND) -Xmx512m -jar $(Q)$(TEST_RESROOT)$(D)jtreg$(D)lib$(D)jtreg.jar$(Q) \
+			$(JTREG_BASIC_OPTIONS) -vmoptions:$(Q)-Xmx512m $(JVM_OPTIONS)$(Q) \
+			-w $(Q)$(REPORTDIR)$(D)work$(Q) \
+			-r $(Q)$(TEST_RESROOT)$(D)report$(Q) \
+			-jdk:$(Q)$(TEST_JDK_HOME)$(Q) \
+			-exclude:$(Q)$(JTREG_JDK_TEST_DIR)$(D)ProblemList.txt$(Q) \
+			-exclude:$(Q)$(TEST_RESROOT)$(D)$(PROBLEM_LIST_FILE)$(Q) \
+			$(Q)$(JTREG_HOTSPOT_TEST_DIR)/compiler(Q); \
+			$(TEST_STATUS)</command>
+		<subsets>
+			<subset>8+</subset>
+		</subsets>
+		<levels>
+			<level>sanity</level>
+		</levels>
+		<groups>
+			<group>openjdk</group>
+		</groups>
+		<platformRequirements>spec.linux_x86-64</platformRequirements>
+	</test>
+
+	<test>
+		<testCaseName>ajdk_runtime_hotspot</testCaseName>
+		<command>$(JAVA_COMMAND) -Xmx512m -jar $(Q)$(TEST_RESROOT)$(D)jtreg$(D)lib$(D)jtreg.jar$(Q) \
+			$(JTREG_BASIC_OPTIONS) -vmoptions:$(Q)-Xmx512m $(JVM_OPTIONS)$(Q) \
+			-w $(Q)$(REPORTDIR)$(D)work$(Q) \
+			-r $(Q)$(TEST_RESROOT)$(D)report$(Q) \
+			-jdk:$(Q)$(TEST_JDK_HOME)$(Q) \
+			-exclude:$(Q)$(JTREG_JDK_TEST_DIR)$(D)ProblemList.txt$(Q) \
+			-exclude:$(Q)$(TEST_RESROOT)$(D)$(PROBLEM_LIST_FILE)$(Q) \
+			$(Q)$(JTREG_HOTSPOT_TEST_DIR)/runtime(Q); \
+			$(TEST_STATUS)</command>
+		<subsets>
+			<subset>8+</subset>
+		</subsets>
+		<levels>
+			<level>sanity</level>
+		</levels>
+		<groups>
+			<group>openjdk</group>
+		</groups>
+		<platformRequirements>spec.linux_x86-64</platformRequirements>
+	</test>
+
+	<test>
+		<testCaseName>ajdk_vmTestbase_hotspot</testCaseName>
+		<command>$(JAVA_COMMAND) -Xmx512m -jar $(Q)$(TEST_RESROOT)$(D)jtreg$(D)lib$(D)jtreg.jar$(Q) \
+			$(JTREG_BASIC_OPTIONS) -vmoptions:$(Q)-Xmx512m $(JVM_OPTIONS)$(Q) \
+			-w $(Q)$(REPORTDIR)$(D)work$(Q) \
+			-r $(Q)$(TEST_RESROOT)$(D)report$(Q) \
+			-jdk:$(Q)$(TEST_JDK_HOME)$(Q) \
+			-exclude:$(Q)$(JTREG_JDK_TEST_DIR)$(D)ProblemList.txt$(Q) \
+			-exclude:$(Q)$(TEST_RESROOT)$(D)$(PROBLEM_LIST_FILE)$(Q) \
+			$(Q)$(JTREG_HOTSPOT_TEST_DIR)/vmTestbase(Q); \
+			$(TEST_STATUS)</command>
+		<subsets>
+			<subset>8+</subset>
+		</subsets>
+		<levels>
+			<level>sanity</level>
+		</levels>
+		<groups>
+			<group>openjdk</group>
+		</groups>
+		<platformRequirements>spec.linux_x86-64</platformRequirements>
+	</test>
+
+	<test>
+		<testCaseName>ajdk_gc_hotspot</testCaseName>
+		<command>$(JAVA_COMMAND) -Xmx512m -jar $(Q)$(TEST_RESROOT)$(D)jtreg$(D)lib$(D)jtreg.jar$(Q) \
+			$(JTREG_BASIC_OPTIONS) -vmoptions:$(Q)-Xmx512m $(JVM_OPTIONS)$(Q) \
+			-w $(Q)$(REPORTDIR)$(D)work$(Q) \
+			-r $(Q)$(TEST_RESROOT)$(D)report$(Q) \
+			-jdk:$(Q)$(TEST_JDK_HOME)$(Q) \
+			-exclude:$(Q)$(JTREG_JDK_TEST_DIR)$(D)ProblemList.txt$(Q) \
+			-exclude:$(Q)$(TEST_RESROOT)$(D)$(PROBLEM_LIST_FILE)$(Q) \
+			$(Q)$(JTREG_HOTSPOT_TEST_DIR)/gc(Q); \
+			$(TEST_STATUS)</command>
+		<subsets>
+			<subset>8+</subset>
+		</subsets>
+		<levels>
+			<level>sanity</level>
+		</levels>
+		<groups>
+			<group>openjdk</group>
+		</groups>
+		<platformRequirements>spec.linux_x86-64</platformRequirements>
+	</test>
 </playlist>
