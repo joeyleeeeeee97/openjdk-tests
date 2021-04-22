@@ -1535,8 +1535,7 @@
 	</test>
 	<test>
     <!-- modify from jvm_compiler test
-         test all hotspot jtreg tests with UseZGC enabled
-         it can be simplified by creating hotspot_gc_zgc (tier[1-3]_gc_zgc) [see hotspot_gc_shenandoah] -->
+         test all hotspot jtreg tests with UseZGC enabled -->
 		<testCaseName>dragonwell11_zgc_hotspot_all</testCaseName>
 		<variations>
 			<variation>Mode150</variation>
@@ -1557,7 +1556,7 @@
 			<subset>11+</subset>
 		</subsets>
 		<levels>
-			<level>extended</level>
+			<level>special</level>
 		</levels>
 		<impls>
 			<impl>hotspot</impl>
