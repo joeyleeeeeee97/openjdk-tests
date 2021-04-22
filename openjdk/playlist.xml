@@ -449,6 +449,7 @@
 		</groups>
 		<platformRequirements>os.win,bits.64</platformRequirements>
 	</test>
+  <!--
 	<test>
 		<testCaseName>jdk_lang_ref_FinalizeOverride_j9</testCaseName>
 		<variations>
@@ -505,6 +506,7 @@
 			<impl>ibm</impl>
 		</impls>
 	</test>
+  -->
 	<test>
 		<testCaseName>jdk_math</testCaseName>
 		<variations>
