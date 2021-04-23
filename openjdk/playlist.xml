@@ -1708,14 +1708,7 @@
 		<platformRequirements>spec.linux_x86-64</platformRequirements>
 	</test>
 	<test>
-    <!-- modify from jvm_compiler test
-         test all hotspot jtreg tests with UseZGC enabled -->
 		<testCaseName>dragonwell11_zgc_hotspot_all</testCaseName>
-		<variations>
-			<variation>Mode150</variation>
-			<variation>Mode650</variation>
-			<variation>Mode1000</variation>
-		</variations>
 		<command>$(JAVA_COMMAND) -Xmx512m -jar $(Q)$(TEST_RESROOT)$(D)jtreg$(D)lib$(D)jtreg.jar$(Q) \
 	$(JTREG_BASIC_OPTIONS) $(JVM_NATIVE_OPTIONS) -vmoptions:$(Q)-Xmx512m -XX:+UnlockExperimentalVMOptions -XX:+UseZGC $(JVM_OPTIONS)$(Q) \
 	-w $(Q)$(REPORTDIR)$(D)work$(Q) \
@@ -1730,7 +1723,7 @@
 			<subset>11+</subset>
 		</subsets>
 		<levels>
-			<level>special</level>
+			<level>extended</level>
 		</levels>
 		<impls>
 			<impl>hotspot</impl>
