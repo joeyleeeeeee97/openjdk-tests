@@ -1770,7 +1770,7 @@
 			-jdk:$(Q)$(TEST_JDK_HOME)$(Q) \
 			-exclude:$(Q)$(JTREG_HOTSPOT_TEST_DIR)$(D)ProblemList.txt$(Q) \
 			-exclude:$(Q)$(TEST_RESROOT)$(D)$(PROBLEM_LIST_FILE)$(Q) \
-			$(Q)$(JTREG_HOTSPOT_TEST_DIR):hotspot_all$(Q); \
+			$(Q)$(JTREG_HOTSPOT_TEST_DIR):hotspot_all_no_apps$(Q); \
 			$(TEST_STATUS)</command>
 		<subsets>
 			<subset>11+</subset>
